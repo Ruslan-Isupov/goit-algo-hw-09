@@ -6,7 +6,7 @@ def time_counter(func,data,sum):
     time_difference = timeit.default_timer() - start
     return "{:.5f}".format(time_difference), result
 
-# Greedy_algorithms
+# Greedy_algorithm
 def find_coins_greedy(sum,coins):
     coins_count ={}
 
@@ -22,7 +22,7 @@ def find_coins_greedy(sum,coins):
     return coins_count
 
 
-# Dynamic_algorithms
+# Dynamic_algorithm
 def find_coins_dynamic(sum,coins):
     min_coins = [0] + [float('inf')] * sum
     coins_used = [0] * (sum + 1)
